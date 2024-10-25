@@ -6,6 +6,10 @@ export default {
             fontFamily: {
                 sans: ["Montserrat", "sans-serif"],
             },
+            colors: {
+                banapLight: "#1EA81E",
+                banapDark: "#1A5D1A"
+            }
         },
     },
     plugins: [],
