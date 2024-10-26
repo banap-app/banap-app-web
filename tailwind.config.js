@@ -8,8 +8,8 @@ export default {
             },
             colors: {
                 banapLight: "#1EA81E",
-                banapDark: "#1A5D1A"
-            }
+                banapDark: "#1A5D1A",
+            },
         },
     },
     plugins: [],
