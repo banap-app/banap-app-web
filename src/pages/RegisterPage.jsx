@@ -16,7 +16,7 @@ const RegisterPage = () => {
                                 <input
                                     type="text"
                                     placeholder="Nome"
-                                    className="h-[80px] w-[458px] rounded-lg border-2 border-[#d0d0d0] px-[80px] py-[23px] text-[28px] text-[#8f8f8f]"
+                                    className="h-[80px] w-[458px] rounded-lg border-2 border-[#d0d0d0] px-[80px] py-[23px] text-[28px] text-[#8f8f8f] focus:outline-none"
                                 />
                                 <div className="absolute left-6 top-6">
                                     <User size={"32px"} color="#8f8f8f" />
@@ -26,7 +26,7 @@ const RegisterPage = () => {
                                 <input
                                     type="email"
                                     placeholder="Email"
-                                    className="h-[80px] w-[458px] rounded-lg border-2 border-[#d0d0d0] px-[80px] py-[23px] text-[28px] text-[#8f8f8f]"
+                                    className="h-[80px] w-[458px] rounded-lg border-2 border-[#d0d0d0] px-[80px] py-[23px] text-[28px] text-[#8f8f8f] focus:outline-none"
                                 />
                                 <div className="absolute left-6 top-6">
                                     <Mail size={"32px"} color="#8f8f8f" />
@@ -36,7 +36,7 @@ const RegisterPage = () => {
                                 <input
                                     type="password"
                                     placeholder="Senha"
-                                    className="h-[80px] w-[458px] rounded-lg border-2 border-[#d0d0d0] px-[80px] py-[23px] text-[28px] text-[#8f8f8f]"
+                                    className="h-[80px] w-[458px] rounded-lg border-2 border-[#d0d0d0] px-[80px] py-[23px] text-[28px] text-[#8f8f8f] focus:outline-none"
                                 />
                                 <div className="absolute left-6 top-6">
                                     <Lock size={"32px"} color="#8f8f8f" />
@@ -46,7 +46,7 @@ const RegisterPage = () => {
                                 <input
                                     type="text"
                                     placeholder="Senha"
-                                    className="h-[80px] w-[458px] rounded-lg border-2 border-[#d0d0d0] px-[80px] py-[23px] text-[28px] text-[#8f8f8f]"
+                                    className="h-[80px] w-[458px] rounded-lg border-2 border-[#d0d0d0] px-[80px] py-[23px] text-[28px] text-[#8f8f8f] focus:outline-none"
                                 />
                                 <div className="absolute left-6 top-6">
                                     <Contact size={"32px"} color="#8f8f8f" />
@@ -56,7 +56,7 @@ const RegisterPage = () => {
                         <input
                             type="submit"
                             value="Cadastrar"
-                            className="h-[58px] w-[458px] rounded-[48px] bg-banapLight text-[28px] font-medium text-white"
+                            className="h-[58px] w-[458px] cursor-pointer rounded-[48px] bg-banapLight text-[28px] font-medium text-white"
                         />
                     </div>
                 </form>
