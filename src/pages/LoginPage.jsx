@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 const LoginPage = () => {
     return (
         <div className="flex h-screen w-screen items-center justify-center">
-            <div className="flex flex-col gap-6">
+            <div className="flex w-full max-w-md flex-col gap-6">
                 <form>
                     <div className="flex flex-col gap-16">
                         <div className="flex flex-col gap-6">
@@ -12,7 +12,7 @@ const LoginPage = () => {
                                 <input
                                     type="email"
                                     placeholder="Email"
-                                    className="h-[80px] w-[458px] rounded-lg border-2 border-[#d0d0d0] px-[80px] py-[23px] text-[28px] text-[#8f8f8f] focus:outline-none"
+                                    className="h-20 w-[458px] rounded-lg border-2 border-[#d0d0d0] px-[80px] py-[23px] text-[28px] text-[#8f8f8f] focus:outline-none"
                                 />
                                 <div className="absolute left-6 top-6">
                                     <Mail size={"32px"} color="#8f8f8f" />
@@ -22,7 +22,7 @@ const LoginPage = () => {
                                 <input
                                     type="password"
                                     placeholder="Senha"
-                                    className="h-[80px] w-[458px] rounded-lg border-2 border-[#d0d0d0] px-[80px] py-[23px] text-[28px] text-[#8f8f8f] focus:outline-none"
+                                    className="h-20 w-[458px] rounded-lg border-2 border-[#d0d0d0] px-[80px] py-[23px] text-[28px] text-[#8f8f8f] focus:outline-none"
                                 />
                                 <div className="absolute left-6 top-6">
                                     <Lock size={"32px"} color="#8f8f8f" />

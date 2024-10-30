@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom"
-import Sidebar from "../components/Sidebar"
 import Header from "../components/Header"
+import Sidebar from "../components/Sidebar"
 
 const MainPage = () => {
     return (
@@ -8,7 +8,9 @@ const MainPage = () => {
             <Sidebar />
             <div className="flex h-full flex-1 flex-col">
                 <Header />
-                <Outlet />
+                <main className="m-8 flex-1">
+                    <Outlet />
+                </main>
             </div>
         </div>
     )
