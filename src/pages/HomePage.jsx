@@ -19,6 +19,36 @@ const HomePage = () => {
                         <div className="h-[402px] w-full rounded-lg bg-banapLight/10"></div>
                     </div>
                 </div>
+                <h1 className="text-3xl font-semibold text-banapLight">
+                    Atividades recentes
+                </h1>
+                <div className="flex h-full w-full flex-col gap-5">
+                    <div className="flex h-full w-full gap-5">
+                        <div className="flex w-2/3">
+                            <div className="h-[207px] w-full rounded-lg bg-banapLight/10"></div>
+                        </div>
+                        <div className="flex w-1/3">
+                            <div className="h-[207px] w-full rounded-lg bg-banapLight/10"></div>
+                        </div>
+                    </div>
+                    <div className="flex w-full">
+                        <div className="h-[207px] w-full rounded-lg bg-banapLight/10"></div>
+                    </div>
+                </div>
+                <h1 className="text-3xl font-semibold text-banapLight">
+                    Clientes
+                </h1>
+                <div className="flex flex-row gap-5">
+                    <div className="h-[170px] w-[220px] rounded-lg bg-banapLight/10"></div>
+                    <div className="h-[170px] w-[220px] rounded-lg bg-banapLight/10"></div>
+                </div>
+                <h1 className="text-3xl font-semibold text-banapLight">
+                    Análises
+                </h1>
+                <div className="flex flex-row gap-5">
+                    <div className="h-[170px] w-[320px] rounded-lg bg-banapLight/10"></div>
+                    <div className="h-[170px] w-[320px] rounded-lg bg-banapLight/10"></div>
+                </div>
             </div>
         </div>
     )

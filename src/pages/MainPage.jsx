@@ -8,7 +8,7 @@ const MainPage = () => {
             <Sidebar />
             <div className="ml-64 flex h-full flex-1 flex-col">
                 <Header />
-                <main className="m-8 flex-1">
+                <main className="flex-1 p-8">
                     <Outlet />
                 </main>
             </div>
