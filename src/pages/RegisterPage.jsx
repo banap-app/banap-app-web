@@ -1,65 +1,73 @@
-import { User, Mail, Lock, Contact } from "lucide-react"
-
+import { Contact, Lock, Mail, User } from "lucide-react"
+import { LowerLines, UpperLines } from "../assets/Lines"
 const RegisterPage = () => {
     return (
-        <div className="flex h-screen w-screen items-center justify-center">
-            <div className="flex flex-col gap-20">
+        <div className="flex h-screen w-screen">
+            <div className="flex h-full w-full flex-col items-center justify-center gap-6">
+                <div className="absolute right-0 top-0">
+                    <UpperLines />
+                </div>
+                <div className="absolute bottom-0 left-0">
+                    <LowerLines />
+                </div>
                 <h1 className="text-center text-5xl font-extrabold text-banapLight">
-                    Crie a sua
-                    <br />
-                    conta
+                    Crie a sua<br></br>conta
                 </h1>
                 <form>
-                    <div className="flex flex-col gap-12">
-                        <div className="flex flex-col gap-6">
+                    <div className="flex flex-col gap-10">
+                        <div className="flex flex-col gap-5">
                             <div className="relative">
                                 <input
                                     type="text"
                                     placeholder="Nome"
-                                    className="h-[80px] w-[458px] rounded-lg border-2 border-[#d0d0d0] px-[80px] py-[23px] text-[28px] text-[#8f8f8f] focus:outline-none"
+                                    className="h-20 w-full max-w-md rounded-lg border-2 border-[#D0D0D0] px-20 text-2xl text-[#8F8F8F] focus:outline-none"
                                 />
                                 <div className="absolute left-6 top-6">
-                                    <User size={"32px"} color="#8f8f8f" />
+                                    <User color="#8F8F8F" size={"32px"} />
                                 </div>
                             </div>
                             <div className="relative">
                                 <input
                                     type="email"
-                                    placeholder="Email"
-                                    className="h-[80px] w-[458px] rounded-lg border-2 border-[#d0d0d0] px-[80px] py-[23px] text-[28px] text-[#8f8f8f] focus:outline-none"
+                                    placeholder="E-mail"
+                                    className="h-20 w-full max-w-md rounded-lg border-2 border-[#D0D0D0] px-20 text-2xl text-[#8F8F8F] focus:outline-none"
                                 />
                                 <div className="absolute left-6 top-6">
-                                    <Mail size={"32px"} color="#8f8f8f" />
+                                    <Mail color="#8F8F8F" size={"32px"} />
                                 </div>
                             </div>
                             <div className="relative">
                                 <input
                                     type="password"
                                     placeholder="Senha"
-                                    className="h-[80px] w-[458px] rounded-lg border-2 border-[#d0d0d0] px-[80px] py-[23px] text-[28px] text-[#8f8f8f] focus:outline-none"
+                                    className="h-20 w-full max-w-md rounded-lg border-2 border-[#D0D0D0] px-20 text-2xl text-[#8F8F8F] focus:outline-none"
                                 />
                                 <div className="absolute left-6 top-6">
-                                    <Lock size={"32px"} color="#8f8f8f" />
+                                    <Lock color="#8F8F8F" size={"32px"} />
                                 </div>
                             </div>
                             <div className="relative">
                                 <input
                                     type="text"
-                                    placeholder="Senha"
-                                    className="h-[80px] w-[458px] rounded-lg border-2 border-[#d0d0d0] px-[80px] py-[23px] text-[28px] text-[#8f8f8f] focus:outline-none"
+                                    placeholder="CREA"
+                                    className="h-20 w-full max-w-md rounded-lg border-2 border-[#D0D0D0] px-20 text-2xl text-[#8F8F8F] focus:outline-none"
                                 />
                                 <div className="absolute left-6 top-6">
-                                    <Contact size={"32px"} color="#8f8f8f" />
+                                    <Contact color="#8F8F8F" size={"32px"} />
                                 </div>
                             </div>
                         </div>
                         <input
                             type="submit"
-                            value="Cadastrar"
-                            className="h-[58px] w-[458px] cursor-pointer rounded-[48px] bg-banapLight text-[28px] font-medium text-white"
+                            value={"Cadastrar"}
+                            className="h-14 w-full max-w-md rounded-full bg-banapLight text-2xl font-medium text-white"
                         />
                     </div>
                 </form>
+                <p className="text-center text-xl text-[#8F8F8F]">
+                    Já possui uma conta?{" "}
+                    <a className="text-banapLight">Faça login</a>
+                </p>
             </div>
         </div>
     )
