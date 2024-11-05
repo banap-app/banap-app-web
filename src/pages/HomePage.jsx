@@ -1,3 +1,6 @@
+import Analysis from "../components/Analysis"
+import Client from "../components/Client"
+
 const HomePage = () => {
     return (
         <div className="flex h-full w-full flex-col overflow-auto">
@@ -39,15 +42,13 @@ const HomePage = () => {
                     Clientes
                 </h1>
                 <div className="flex flex-row gap-5">
-                    <div className="h-[170px] w-[220px] rounded-lg bg-banapLight/10"></div>
-                    <div className="h-[170px] w-[220px] rounded-lg bg-banapLight/10"></div>
+                    <Client />
                 </div>
                 <h1 className="text-3xl font-semibold text-banapLight">
                     Análises
                 </h1>
                 <div className="flex flex-row gap-5">
-                    <div className="h-[170px] w-[320px] rounded-lg bg-banapLight/10"></div>
-                    <div className="h-[170px] w-[320px] rounded-lg bg-banapLight/10"></div>
+                    <Analysis />
                 </div>
             </div>
         </div>
