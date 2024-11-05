@@ -588,4 +588,125 @@ const AnalysisAssets = () => {
     )
 }
 
-export { LowerLines, UpperLines, ClientAssets, AnalysisAssets }
+const AddClient = () => {
+    return (
+        <svg
+            width="51"
+            height="39"
+            viewBox="0 0 51 39"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="M28.3334 33.5416V30.3471C28.3334 28.6527 27.631 27.0277 26.3808 25.8295C25.1306 24.6314 23.4349 23.9583 21.6667 23.9583H8.33341C6.5653 23.9583 4.86961 24.6314 3.61937 25.8295C2.36913 27.0277 1.66675 28.6527 1.66675 30.3471V33.5416"
+                stroke="url(#paint0_linear_1755_1761)"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M14.9999 17.5695C18.6818 17.5695 21.6666 14.7091 21.6666 11.1806C21.6666 7.65215 18.6818 4.79175 14.9999 4.79175C11.318 4.79175 8.33325 7.65215 8.33325 11.1806C8.33325 14.7091 11.318 17.5695 14.9999 17.5695Z"
+                stroke="url(#paint1_linear_1755_1761)"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M38.3333 33.5417V30.3473C38.3322 28.9317 37.8405 27.5566 36.9355 26.4378C36.0305 25.319 34.7635 24.5199 33.3333 24.166"
+                stroke="url(#paint2_linear_1755_1761)"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M26.6667 4.99927C28.1008 5.35114 29.3718 6.15039 30.2795 7.27101C31.1871 8.39164 31.6798 9.7699 31.6798 11.1885C31.6798 12.6071 31.1871 13.9854 30.2795 15.106C29.3718 16.2266 28.1008 17.0259 26.6667 17.3777"
+                stroke="url(#paint3_linear_1755_1761)"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M45 11.6667V21.6667"
+                stroke="url(#paint4_linear_1755_1761)"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M50 16.6667H40"
+                stroke="url(#paint5_linear_1755_1761)"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <defs>
+                <linearGradient
+                    id="paint0_linear_1755_1761"
+                    x1="15.0001"
+                    y1="23.9583"
+                    x2="15.0001"
+                    y2="33.5416"
+                    gradientUnits="userSpaceOnUse"
+                >
+                    <stop stopColor="#1EA81E" />
+                    <stop offset="1" stopColor="#1A5D1A" />
+                </linearGradient>
+                <linearGradient
+                    id="paint1_linear_1755_1761"
+                    x1="14.9999"
+                    y1="4.79175"
+                    x2="14.9999"
+                    y2="17.5695"
+                    gradientUnits="userSpaceOnUse"
+                >
+                    <stop stopColor="#1EA81E" />
+                    <stop offset="1" stopColor="#1A5D1A" />
+                </linearGradient>
+                <linearGradient
+                    id="paint2_linear_1755_1761"
+                    x1="35.8333"
+                    y1="24.166"
+                    x2="35.8333"
+                    y2="33.5417"
+                    gradientUnits="userSpaceOnUse"
+                >
+                    <stop stopColor="#1EA81E" />
+                    <stop offset="1" stopColor="#1A5D1A" />
+                </linearGradient>
+                <linearGradient
+                    id="paint3_linear_1755_1761"
+                    x1="29.1733"
+                    y1="4.99927"
+                    x2="29.1733"
+                    y2="17.3777"
+                    gradientUnits="userSpaceOnUse"
+                >
+                    <stop stopColor="#1EA81E" />
+                    <stop offset="1" stopColor="#1A5D1A" />
+                </linearGradient>
+                <linearGradient
+                    id="paint4_linear_1755_1761"
+                    x1="45.5"
+                    y1="11.6667"
+                    x2="45.5"
+                    y2="21.6667"
+                    gradientUnits="userSpaceOnUse"
+                >
+                    <stop stopColor="#1EA81E" />
+                    <stop offset="1" stopColor="#1A5D1A" />
+                </linearGradient>
+                <linearGradient
+                    id="paint5_linear_1755_1761"
+                    x1="45"
+                    y1="16.6667"
+                    x2="45"
+                    y2="17.6667"
+                    gradientUnits="userSpaceOnUse"
+                >
+                    <stop stopColor="#1EA81E" />
+                    <stop offset="1" stopColor="#1A5D1A" />
+                </linearGradient>
+            </defs>
+        </svg>
+    )
+}
+
+export { LowerLines, UpperLines, ClientAssets, AnalysisAssets, AddClient }
