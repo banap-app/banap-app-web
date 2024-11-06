@@ -211,8 +211,10 @@ const HomePage = () => {
                 <h1 className="text-3xl font-semibold text-banapLight">
                     Análises
                 </h1>
-                <div className="flex flex-row gap-5">
-                    <Analysis />
+                <div className="no-scrollbar flex h-full w-full flex-row gap-5 overflow-x-auto">
+                    <div className="flex-grow-0">
+                        <Analysis />
+                    </div>
                 </div>
             </div>
         </div>
