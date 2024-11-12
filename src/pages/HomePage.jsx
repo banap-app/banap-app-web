@@ -14,6 +14,7 @@ import {
 import Analysis from "../components/Analysis"
 import Client from "../components/Client"
 import WeatherMock from "../components/WeatherMock"
+import ActivityMock from "../components/ActivityMock"
 
 const HomePage = () => {
     return (
@@ -31,19 +32,7 @@ const HomePage = () => {
                 <h1 className="text-3xl font-semibold text-banapLight">
                     Atividades recentes
                 </h1>
-                <div className="flex h-full w-full flex-col gap-5">
-                    <div className="flex h-full w-full gap-5">
-                        <div className="flex w-2/3">
-                            <div className="h-[207px] w-full rounded-lg bg-banapLight/10"></div>
-                        </div>
-                        <div className="flex w-1/3">
-                            <div className="h-[207px] w-full rounded-lg bg-banapLight/10"></div>
-                        </div>
-                    </div>
-                    <div className="flex w-full">
-                        <div className="h-[207px] w-full rounded-lg bg-banapLight/10"></div>
-                    </div>
-                </div>
+                <ActivityMock />
                 <h1 className="text-3xl font-semibold text-banapLight">
                     Clientes
                 </h1>
