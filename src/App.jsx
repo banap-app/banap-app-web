@@ -3,6 +3,7 @@ import LoginPage from "./pages/LoginPage"
 import RegisterPage from "./pages/RegisterPage"
 import MainPage from "./pages/MainPage"
 import HomePage from "./pages/HomePage"
+import ErrorPage from "./pages/ErrorPage"
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <MainPage />,
+        errorElement: <ErrorPage />,
         children: [{ index: true, element: <HomePage /> }],
     },
 ])
