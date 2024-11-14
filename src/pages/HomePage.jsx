@@ -1,22 +1,13 @@
-import { MapPin } from "lucide-react"
 import { AddClient } from "../assets/Lines"
-import {
-    Cloudy,
-    Humidity,
-    Pin,
-    Rain,
-    Rainy,
-    Storm,
-    SunBehindCloud,
-    Sunny,
-    Wind,
-} from "../assets/Weather"
 import Analysis from "../components/Analysis"
 import Client from "../components/Client"
 import WeatherMock from "../components/WeatherMock"
 import ActivityMock from "../components/ActivityMock"
+import { useOutletContext } from "react-router-dom"
 
 const HomePage = () => {
+    const { openModal } = useOutletContext()
+
     return (
         <div className="flex h-full w-full flex-col overflow-auto">
             <div className="flex flex-col gap-10">
@@ -40,7 +31,10 @@ const HomePage = () => {
                     <div className="flex-shrink-0">
                         <Client />
                     </div>
-                    <div className="flex h-[170px] w-56 flex-shrink-0 items-center justify-center rounded-lg bg-banapLight/10">
+                    <div
+                        onClick={openModal}
+                        className="flex h-[170px] w-56 flex-shrink-0 cursor-pointer items-center justify-center rounded-lg bg-banapLight/10"
+                    >
                         <AddClient />
                     </div>
                 </div>
