@@ -17,7 +17,7 @@ const Modal = ({ visible, closeModal }) => {
             role="dialog"
             className="fixed z-10 flex h-full w-full items-center justify-center bg-black/20"
         >
-            <div className="rounded-[20px] bg-white px-9 py-12">
+            <div className="rounded-[20px] bg-white px-9 py-12 drop-shadow-2xl">
                 <div className="flex flex-col gap-[60px]">
                     <div className="flex flex-col gap-1">
                         <div className="flex gap-1">
