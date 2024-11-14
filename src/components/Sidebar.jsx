@@ -18,24 +18,24 @@ const Sidebar = () => {
                         className="w-[100px]"
                     />
                     <div className="flex h-[250px] flex-col justify-between">
-                        <span className="flex items-center gap-4 text-banapLight">
+                        <span className="flex cursor-pointer items-center gap-4 text-banapLight">
                             <House size={"28px"} />
                             <p className="text-base font-medium">Início</p>
                         </span>
                         <ul className="flex flex-col gap-6 text-banapLight">
-                            <li className="flex items-center gap-4">
+                            <li className="flex cursor-pointer items-center gap-4">
                                 <Users size={"28px"} />
                                 <p className="text-base font-medium">
                                     Clientes
                                 </p>
                             </li>
-                            <li className="flex gap-4">
+                            <li className="flex cursor-pointer gap-4">
                                 <TrendingUp size={"28px"} />
                                 <p className="items-center text-base font-medium">
                                     Análises
                                 </p>
                             </li>
-                            <li className="flex gap-4">
+                            <li className="flex cursor-pointer gap-4">
                                 <Wrench size={"28px"} />
                                 <p className="items-center text-base font-medium">
                                     Ferramentas
@@ -45,8 +45,12 @@ const Sidebar = () => {
                     </div>
                 </div>
                 <div className="flex flex-col gap-5 text-banapLight">
-                    <LogOut size={"28px"} />
-                    <Settings size={"28px"} />
+                    <div className="cursor-pointer">
+                        <LogOut size={"28px"} />
+                    </div>
+                    <div className="cursor-pointer">
+                        <Settings size={"28px"} />
+                    </div>
                 </div>
             </div>
         </div>

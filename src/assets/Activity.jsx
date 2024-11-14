@@ -36,8 +36,8 @@ const RecentActivity = () => {
             </g>
             <g filter="url(#filter3_d_1889_1642)">
                 <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M89.3463 -66.64C106.695 -71.7396 125.389 -61.6312 139.814 -50.7074C154.064 -39.9162 162.131 -23.5951 168.349 -6.81408C174.821 10.6517 183.663 30.1489 176.079 47.1592C168.597 63.94 146.99 67.3173 131.16 76.5963C117.311 84.7138 105.389 97.8968 89.3463 97.9991C73.2671 98.1017 57.8398 89.1661 47.1444 77.1321C37.5511 66.3382 40.5783 49.9259 34.8351 36.666C28.1108 21.1406 5.32429 9.34401 10.858 -6.64657C16.4292 -22.7455 43.0892 -15.9165 56.6077 -26.2496C70.7147 -37.0324 72.3221 -61.6359 89.3463 -66.64Z"
                     fill="url(#paint3_linear_1889_1642)"
                 />
@@ -50,9 +50,9 @@ const RecentActivity = () => {
                     width="67.7112"
                     height="67.7114"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix
                         in="SourceAlpha"
                         type="matrix"
@@ -85,9 +85,9 @@ const RecentActivity = () => {
                     width="57.6667"
                     height="57.6667"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix
                         in="SourceAlpha"
                         type="matrix"
@@ -120,9 +120,9 @@ const RecentActivity = () => {
                     width="38.8333"
                     height="38.8335"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix
                         in="SourceAlpha"
                         type="matrix"
@@ -155,9 +155,9 @@ const RecentActivity = () => {
                     width="189"
                     height="186"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix
                         in="SourceAlpha"
                         type="matrix"
@@ -191,8 +191,8 @@ const RecentActivity = () => {
                     y2="170.151"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#1EA81E" />
-                    <stop offset="1" stop-color="#1A5D1A" />
+                    <stop stopColor="#1EA81E" />
+                    <stop offset="1" stopColor="#1A5D1A" />
                 </linearGradient>
                 <linearGradient
                     id="paint1_linear_1889_1642"
@@ -202,8 +202,8 @@ const RecentActivity = () => {
                     y2="166.308"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#1EA81E" />
-                    <stop offset="1" stop-color="#1A5D1A" />
+                    <stop stopColor="#1EA81E" />
+                    <stop offset="1" stopColor="#1A5D1A" />
                 </linearGradient>
                 <linearGradient
                     id="paint2_linear_1889_1642"
@@ -213,8 +213,8 @@ const RecentActivity = () => {
                     y2="124.502"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#1EA81E" />
-                    <stop offset="1" stop-color="#1A5D1A" />
+                    <stop stopColor="#1EA81E" />
+                    <stop offset="1" stopColor="#1A5D1A" />
                 </linearGradient>
                 <linearGradient
                     id="paint3_linear_1889_1642"
@@ -224,8 +224,8 @@ const RecentActivity = () => {
                     y2="98"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#1EA81E" />
-                    <stop offset="1" stop-color="#1A5D1A" />
+                    <stop stopColor="#1EA81E" />
+                    <stop offset="1" stopColor="#1A5D1A" />
                 </linearGradient>
             </defs>
         </svg>
@@ -270,8 +270,8 @@ const LastClient = () => {
             </g>
             <g filter="url(#filter3_d_1889_1643)">
                 <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M89.3463 -113.64C106.695 -118.74 125.389 -108.631 139.814 -97.7074C154.064 -86.9162 162.131 -70.5951 168.349 -53.8141C174.821 -36.3483 183.663 -16.8511 176.079 0.159164C168.597 16.94 146.99 20.3173 131.16 29.5963C117.311 37.7138 105.389 50.8968 89.3463 50.9991C73.2671 51.1017 57.8398 42.1661 47.1444 30.1321C37.5511 19.3382 40.5783 2.92588 34.8351 -10.334C28.1108 -25.8594 5.32429 -37.656 10.858 -53.6466C16.4292 -69.7455 43.0892 -62.9165 56.6077 -73.2496C70.7147 -84.0324 72.3221 -108.636 89.3463 -113.64Z"
                     fill="url(#paint3_linear_1889_1643)"
                 />
@@ -284,9 +284,9 @@ const LastClient = () => {
                     width="67.7112"
                     height="67.7114"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix
                         in="SourceAlpha"
                         type="matrix"
@@ -319,9 +319,9 @@ const LastClient = () => {
                     width="57.6667"
                     height="57.6667"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix
                         in="SourceAlpha"
                         type="matrix"
@@ -354,9 +354,9 @@ const LastClient = () => {
                     width="38.8333"
                     height="38.8335"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix
                         in="SourceAlpha"
                         type="matrix"
@@ -389,9 +389,9 @@ const LastClient = () => {
                     width="189"
                     height="186"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix
                         in="SourceAlpha"
                         type="matrix"
@@ -425,8 +425,8 @@ const LastClient = () => {
                     y2="170.151"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#1EA81E" />
-                    <stop offset="1" stop-color="#1A5D1A" />
+                    <stop stopColor="#1EA81E" />
+                    <stop offset="1" stopColor="#1A5D1A" />
                 </linearGradient>
                 <linearGradient
                     id="paint1_linear_1889_1643"
@@ -436,8 +436,8 @@ const LastClient = () => {
                     y2="166.308"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#1EA81E" />
-                    <stop offset="1" stop-color="#1A5D1A" />
+                    <stop stopColor="#1EA81E" />
+                    <stop offset="1" stopColor="#1A5D1A" />
                 </linearGradient>
                 <linearGradient
                     id="paint2_linear_1889_1643"
@@ -447,8 +447,8 @@ const LastClient = () => {
                     y2="124.502"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#1EA81E" />
-                    <stop offset="1" stop-color="#1A5D1A" />
+                    <stop stopColor="#1EA81E" />
+                    <stop offset="1" stopColor="#1A5D1A" />
                 </linearGradient>
                 <linearGradient
                     id="paint3_linear_1889_1643"
@@ -458,8 +458,8 @@ const LastClient = () => {
                     y2="51"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#1EA81E" />
-                    <stop offset="1" stop-color="#1A5D1A" />
+                    <stop stopColor="#1EA81E" />
+                    <stop offset="1" stopColor="#1A5D1A" />
                 </linearGradient>
             </defs>
         </svg>
