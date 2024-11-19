@@ -42,18 +42,18 @@ const LineChart = () => {
 
     const data = {
         labels: [
-            "Jan",
-            "Fev",
-            "Mar",
-            "Abr",
-            "Mai",
-            "Jun",
-            "Jul",
-            "Ago",
-            "Set",
-            "Out",
-            "Nov",
-            "Dez",
+            "Janeiro",
+            "Fevereiro",
+            "Março",
+            "Abril",
+            "Maio",
+            "Junho",
+            "Julho",
+            "Agosto",
+            "Setembro",
+            "Outubro",
+            "Novembro",
+            "Dezembro",
         ],
         datasets: [
             {
@@ -64,6 +64,10 @@ const LineChart = () => {
                 ],
                 fill: true,
                 borderColor: "#1ea81e",
+                borderWidth: 1,
+                pointBackgroundColor: "#1ea81e",
+                pointBorderColor: "#1ea81e",
+                pointRadius: 6,
                 tension: 0.4,
             },
         ],
@@ -73,9 +77,35 @@ const LineChart = () => {
         responsive: true,
         plugins: {
             tooltip: {
+                backgroundColor: "#1ea81e",
+                displayColors: false,
+                cornerRadius: 8,
+                padding: 12,
                 callbacks: {
                     label: function (context) {
                         return `${context.dataset.label}: ${context.raw}`
+                    },
+                },
+                titleFont: {
+                    family: "Montserrat",
+                    size: 16,
+                },
+                bodyFont: {
+                    family: "Montserrat",
+                },
+                footerFont: {
+                    family: "Montserrat",
+                },
+            },
+            legend: {
+                labels: {
+                    color: "#1ea81e",
+                    usePointStyle: true,
+                    pointStyle: "point",
+                    boxHeight: 8,
+                    font: {
+                        family: "Montserrat",
+                        size: 12,
                     },
                 },
             },
@@ -99,6 +129,9 @@ const LineChart = () => {
                         family: "Montserrat",
                         size: 12,
                     },
+                    callback: function (value, index, labels) {
+                        return data.labels[index].slice(0, 3)
+                    },
                 },
             },
             y: {
@@ -108,6 +141,11 @@ const LineChart = () => {
                 title: {
                     display: false,
                     text: "Produção Total",
+                    color: "#1ea81e",
+                    font: {
+                        family: "Montserrat",
+                        size: 12,
+                    },
                 },
                 border: {
                     display: false,
@@ -137,10 +175,21 @@ const LineChart = () => {
                 bottom: 0,
             },
         },
+        hover: {
+            mode: "nearest",
+            intersect: true,
+            animationDuration: 200,
+        },
+        elements: {
+            point: {
+                radius: 6,
+                hoverRadius: 10,
+            },
+        },
     }
 
     return (
-        <div className="w-full">
+        <div className="h-full w-full">
             <Line ref={chartRef} data={data} options={options} />
         </div>
     )
