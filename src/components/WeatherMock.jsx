@@ -122,7 +122,7 @@ const WeatherMock = () => {
                     </div>
                     <div className="absolute bottom-0 flex w-full items-center justify-center gap-5 py-6">
                         <div className="flex gap-2">
-                            <Wind />
+                            <Wind size={"36px"} />
                             <div>
                                 <p className="text-xs text-banapLight">Vento</p>
                                 <p className="text-[8px] font-medium text-banapLight">
