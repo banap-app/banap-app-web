@@ -9,7 +9,7 @@ import {
     Title,
     Tooltip,
     Legend,
-    Ticks,
+    Filler,
 } from "chart.js"
 
 ChartJS.register(
@@ -19,7 +19,8 @@ ChartJS.register(
     LineElement,
     Title,
     Tooltip,
-    Legend
+    Legend,
+    Filler
 )
 
 const LineChart = () => {
@@ -45,7 +46,7 @@ const LineChart = () => {
                     27000, 35000, 20000, 30000, 70000, 60000, 73000, 160000,
                     165000, 110000, 70000, 90000,
                 ],
-                fill: false,
+                fill: true,
                 borderColor: "#1ea81e",
                 tension: 0.4,
             },
