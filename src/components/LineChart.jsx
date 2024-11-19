@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { Line } from "react-chartjs-2"
 import {
     Chart as ChartJS,
@@ -24,6 +24,22 @@ ChartJS.register(
 )
 
 const LineChart = () => {
+    const chartRef = useRef(null)
+
+    useEffect(() => {
+        const chart = chartRef.current
+
+        if (chart) {
+            const ctx = chart.ctx
+            const gradient = ctx.createLinearGradient(0, 0, 0, chart.height)
+            gradient.addColorStop(0, "rgba(30, 168, 30, 0.4)")
+            gradient.addColorStop(1, "rgba(30, 168, 30, 0)")
+
+            chart.data.datasets[0].backgroundColor = gradient
+            chart.update()
+        }
+    }, [])
+
     const data = {
         labels: [
             "Jan",
@@ -66,6 +82,7 @@ const LineChart = () => {
         },
         scales: {
             x: {
+                offset: true,
                 grid: {
                     display: false,
                 },
@@ -75,6 +92,13 @@ const LineChart = () => {
                 },
                 border: {
                     display: false,
+                },
+                ticks: {
+                    color: "#1ea81e",
+                    font: {
+                        family: "Montserrat",
+                        size: 12,
+                    },
                 },
             },
             y: {
@@ -88,13 +112,36 @@ const LineChart = () => {
                 border: {
                     display: false,
                 },
+                ticks: {
+                    color: "#1ea81e",
+                    font: {
+                        family: "Montserrat",
+                        size: 12,
+                    },
+                    callback: function (value) {
+                        if (value >= 1000) {
+                            return value / 1000 + "K"
+                        }
+                        return value
+                    },
+                },
+                min: 0,
+                max: 250000,
+            },
+        },
+        layout: {
+            padding: {
+                left: 0,
+                right: 0,
+                top: 0,
+                bottom: 0,
             },
         },
     }
 
     return (
         <div className="w-full">
-            <Line data={data} options={options} />
+            <Line ref={chartRef} data={data} options={options} />
         </div>
     )
 }

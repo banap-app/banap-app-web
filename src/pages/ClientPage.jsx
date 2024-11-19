@@ -75,7 +75,7 @@ const ClientPage = () => {
                         </div>
                     </div>
                     <div className="flex w-full gap-[10px]">
-                        <div className="flex h-[557px] w-3/5 items-center justify-center rounded-lg bg-banapLight/10">
+                        <div className="flex h-[557px] w-3/5 items-center justify-center rounded-lg bg-banapLight/10 p-8">
                             <LineChart />
                         </div>
                         <div className="flex w-2/5 flex-col gap-[10px]">
