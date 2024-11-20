@@ -3,6 +3,7 @@ import WhatsappLogo from "../assets/Icons"
 import { Wind } from "../assets/Weather"
 import { PropertyAsset, PropertyIcon } from "../assets/Clients"
 import LineChart from "../components/LineChart"
+import BarChart from "../components/BarChart"
 
 const ClientPage = () => {
     return (
@@ -75,11 +76,13 @@ const ClientPage = () => {
                         </div>
                     </div>
                     <div className="flex w-full gap-[10px]">
-                        <div className="flex h-[557px] w-3/5 items-center justify-center rounded-lg bg-banapLight/10 p-8">
+                        <div className="flex h-[557px] w-3/5 items-center justify-center rounded-lg bg-banapLight/10">
                             <LineChart />
                         </div>
                         <div className="flex w-2/5 flex-col gap-[10px]">
-                            <div className="h-1/2 w-full rounded-lg bg-banapLight/10"></div>
+                            <div className="flex h-1/2 w-full flex-col items-center justify-center rounded-lg bg-banapLight/10 px-[30px]">
+                                <BarChart />
+                            </div>
                             <div className="h-1/2 w-full rounded-lg bg-banapLight/10"></div>
                         </div>
                     </div>
