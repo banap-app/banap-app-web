@@ -1,51 +1,50 @@
-import { AddClient } from "../assets/Lines"
-import Analysis from "../components/Analysis"
-import Client from "../components/Client"
-import WeatherMock from "../components/WeatherMock"
-import ActivityMock from "../components/ActivityMock"
-import { useOutletContext } from "react-router-dom"
+import Analytics from "../components/Analytics"
+import Clients from "../components/Clients"
+import Activity from "../components/mocks/Activity"
+import Weather from "../components/mocks/Weather"
 
 const HomePage = () => {
-    const { openModal } = useOutletContext()
-
     return (
-        <div className="flex h-full w-full flex-col overflow-auto">
-            <div className="flex flex-col gap-10">
-                <div className="flex flex-col gap-2">
-                    <h1 className="text-3xl font-semibold text-banapLight">
-                        Bem-vindo de volta, Usuário
-                    </h1>
-                    <h2 className="text-2xl text-banapLight">
-                        Nós estivemos trabalhando enquanto você esteve fora...
-                    </h2>
-                </div>
-                <WeatherMock />
-                <h1 className="text-3xl font-semibold text-banapLight">
-                    Atividades recentes
-                </h1>
-                <ActivityMock />
-                <h1 className="text-3xl font-semibold text-banapLight">
-                    Clientes
-                </h1>
-                <div className="flex flex-row gap-5">
-                    <div className="flex-shrink-0">
-                        <Client />
+        <div className="h-full w-full items-center justify-center bg-transparent">
+            <div className="flex flex-col gap-[60px]">
+                <section>
+                    <div className="flex flex-col gap-[60px]">
+                        <div className="flex flex-col">
+                            <h1 className="title text-primary">
+                                Bem-vindo de volta, Gilmar
+                            </h1>
+                            <p className="sub-title text-primary">
+                                Nós estivemos trabalhando enquanto esteve
+                                fora...
+                            </p>
+                        </div>
+                        <Weather />
                     </div>
-                    <div
-                        onClick={openModal}
-                        className="flex h-[170px] w-56 flex-shrink-0 cursor-pointer items-center justify-center rounded-lg bg-banapLight/10"
-                    >
-                        <AddClient />
+                </section>
+                <section>
+                    <div className="flex flex-col gap-10">
+                        <h2 className="text-[32px] font-semibold text-primary">
+                            Atividades recentes
+                        </h2>
+                        <Activity />
                     </div>
-                </div>
-                <h1 className="text-3xl font-semibold text-banapLight">
-                    Análises
-                </h1>
-                <div className="no-scrollbar flex h-full w-full flex-row gap-5 overflow-x-auto">
-                    <div className="flex-grow-0">
-                        <Analysis />
+                </section>
+                <section>
+                    <div className="flex flex-col gap-10">
+                        <h2 className="text-[32px] font-semibold text-primary">
+                            Clientes
+                        </h2>
+                        <Clients addClientButton={true} />
                     </div>
-                </div>
+                </section>
+                <section>
+                    <div className="flex flex-col gap-10">
+                        <h2 className="text-[32px] font-semibold text-primary">
+                            Análises
+                        </h2>
+                        <Analytics />
+                    </div>
+                </section>
             </div>
         </div>
     )

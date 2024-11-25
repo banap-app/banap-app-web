@@ -1,77 +1,66 @@
 import { Contact, Lock, Mail, User } from "lucide-react"
-import { LowerLines, UpperLines } from "../assets/Lines"
+import Input from "../components/forms/Input"
+import Button from "../components/forms/Button"
+
 const RegisterPage = () => {
     return (
-        <div className="flex h-screen w-screen">
-            <div className="absolute right-0 top-0">
-                <UpperLines />
-            </div>
-            <div className="absolute bottom-0 left-0">
-                <LowerLines />
-            </div>
-            <div className="flex h-full w-full flex-col items-center justify-center gap-20">
-                <h1 className="text-center text-5xl font-extrabold text-banapLight">
-                    Crie a sua<br></br>conta
-                </h1>
-                <div className="flex flex-col items-center justify-center gap-6">
-                    <form>
-                        <div className="flex flex-col gap-10">
-                            <div className="flex flex-col gap-5">
-                                <div className="relative">
-                                    <input
-                                        type="text"
-                                        placeholder="Nome"
-                                        className="h-20 w-full max-w-md rounded-lg border-2 border-[#D0D0D0] px-20 text-2xl text-[#8F8F8F] focus:outline-none"
+        <div className="flex h-screen w-screen flex-col items-center justify-center">
+            <div className="flex h-auto w-full items-center justify-center">
+                <div className="flex w-full flex-col items-center justify-center gap-20">
+                    <div className="w-full text-center">
+                        <h1 className="text-[48px] font-extrabold text-primary">
+                            Crie sua<br></br>Conta
+                        </h1>
+                    </div>
+                    <div className="flex w-full flex-col items-center justify-center gap-8">
+                        <form className="flex w-full flex-col items-center justify-center sm:w-[458px]">
+                            <div className="flex w-full flex-col gap-12">
+                                <div className="flex w-full flex-col gap-6">
+                                    <Input
+                                        type={"text"}
+                                        name={"name"}
+                                        id={"name"}
+                                        placeholder={"Seu nome"}
+                                        icon={User}
+                                        required
                                     />
-                                    <div className="absolute left-6 top-6">
-                                        <User color="#8F8F8F" size={"32px"} />
-                                    </div>
-                                </div>
-                                <div className="relative">
-                                    <input
-                                        type="email"
-                                        placeholder="E-mail"
-                                        className="h-20 w-full max-w-md rounded-lg border-2 border-[#D0D0D0] px-20 text-2xl text-[#8F8F8F] focus:outline-none"
+                                    <Input
+                                        type={"email"}
+                                        name={"email"}
+                                        id={"email"}
+                                        placeholder={"Seu email"}
+                                        icon={Mail}
+                                        required
                                     />
-                                    <div className="absolute left-6 top-6">
-                                        <Mail color="#8F8F8F" size={"32px"} />
-                                    </div>
-                                </div>
-                                <div className="relative">
-                                    <input
-                                        type="password"
-                                        placeholder="Senha"
-                                        className="h-20 w-full max-w-md rounded-lg border-2 border-[#D0D0D0] px-20 text-2xl text-[#8F8F8F] focus:outline-none"
+                                    <Input
+                                        type={"password"}
+                                        name={"password"}
+                                        id={"password"}
+                                        placeholder={"Sua senha"}
+                                        icon={Lock}
+                                        required
                                     />
-                                    <div className="absolute left-6 top-6">
-                                        <Lock color="#8F8F8F" size={"32px"} />
-                                    </div>
-                                </div>
-                                <div className="relative">
-                                    <input
-                                        type="text"
-                                        placeholder="CREA"
-                                        className="h-20 w-full max-w-md rounded-lg border-2 border-[#D0D0D0] px-20 text-2xl text-[#8F8F8F] focus:outline-none"
+                                    <Input
+                                        type={"text"}
+                                        name={"crea"}
+                                        id={"crea"}
+                                        placeholder={"Seu CREA"}
+                                        icon={Contact}
+                                        required
                                     />
-                                    <div className="absolute left-6 top-6">
-                                        <Contact
-                                            color="#8F8F8F"
-                                            size={"32px"}
-                                        />
-                                    </div>
                                 </div>
+                                <Button value={"Cadastrar-se"} />
                             </div>
-                            <input
-                                type="submit"
-                                value={"Cadastrar"}
-                                className="h-14 w-full max-w-md rounded-full bg-banapLight text-2xl font-medium text-white"
-                            />
+                        </form>
+                        <div className="w-full text-center">
+                            <p className="text-[20px] text-[#8F8F8F]">
+                                Já possui uma conta?{" "}
+                                <span className="cursor-pointer text-primary">
+                                    Logar-se.
+                                </span>
+                            </p>
                         </div>
-                    </form>
-                    <p className="text-center text-xl text-[#8F8F8F]">
-                        Já possui uma conta?{" "}
-                        <a className="text-banapLight">Faça login</a>
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>

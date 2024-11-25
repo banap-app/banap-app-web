@@ -23,7 +23,7 @@ ChartJS.register(
     Filler
 )
 
-const LineChart = () => {
+const TotalProductionChart = () => {
     const chartRef = useRef(null)
 
     useEffect(() => {
@@ -75,6 +75,7 @@ const LineChart = () => {
 
     const options = {
         responsive: true,
+        maintainAspectRatio: false,
         plugins: {
             tooltip: {
                 backgroundColor: "#1ea81e",
@@ -195,4 +196,4 @@ const LineChart = () => {
     )
 }
 
-export default LineChart
+export default TotalProductionChart

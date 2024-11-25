@@ -3,12 +3,12 @@ export default {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
-            fontFamily: {
-                sans: ["Montserrat", "sans-serif"],
-            },
             colors: {
-                banapLight: "#1EA81E",
-                banapDark: "#1A5D1A",
+                primary: "#1EA81E",
+                secondary: "#1A5D1A",
+            },
+            boxShadow: {
+                sidebar: "0px 0px 10px rgba(0,0,0,0.25)",
             },
         },
     },

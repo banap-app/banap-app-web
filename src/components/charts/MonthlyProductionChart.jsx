@@ -13,7 +13,7 @@ import { callback } from "chart.js/helpers"
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
-const BarChart = () => {
+const MonthlyProductionChart = () => {
     const data = {
         labels: [
             ["Janeiro", "Fevereiro", "Março"],
@@ -27,30 +27,28 @@ const BarChart = () => {
                 data: [10000, 7500, 10000, 4000],
                 backgroundColor: "#1A5D1A",
                 borderColor: "#1A5D1A",
-                barPercentage: 0.5,
-                categoryPercentage: 0.5,
+                barThickness: 6,
             },
             {
                 label: "Fósforo",
                 data: [7500, 15000, 3000, 13000],
                 backgroundColor: "#1EA81E",
                 borderColor: "#1EA81E",
-                barPercentage: 0.5,
-                categoryPercentage: 0.5,
+                barThickness: 6,
             },
             {
                 label: "Potássio",
                 data: [10000, 10000, 7500, 9500],
                 backgroundColor: "#27DB27",
                 borderColor: "#27DB27",
-                barPercentage: 0.5,
-                categoryPercentage: 0.5,
+                barThickness: 6,
             },
         ],
     }
 
     const options = {
         responsive: true,
+        maintainAspectRatio: false,
         plugins: {
             tooltip: {
                 backgroundColor: "#1ea81e",
@@ -119,6 +117,9 @@ const BarChart = () => {
                         return labels[0] + "/" + labels[2]
                     },
                 },
+                categoryPercentage: 1.0,
+                barCategoryPercentage: 0.5,
+                barGap: 3,
             },
             y: {
                 grid: {
@@ -164,4 +165,4 @@ const BarChart = () => {
     )
 }
 
-export default BarChart
+export default MonthlyProductionChart
