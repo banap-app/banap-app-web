@@ -1,7 +1,14 @@
-import Clients from "../components/Clients"
+import Clients from "../components/common/Clients"
 import Activity from "../components/mocks/Activity"
+import { useModal } from "../context/ModalContext"
 
 const ClientsPage = () => {
+    const { openModal } = useModal()
+
+    const handleOpenModal = () => {
+        openModal("aggregate")
+    }
+
     return (
         <div className="h-full w-full items-center justify-center bg-transparent">
             <div className="flex flex-col gap-[60px]">
@@ -16,7 +23,10 @@ const ClientsPage = () => {
                                     Todos os dados reunidos em um só lugar!
                                 </p>
                             </div>
-                            <div className="flex h-[48px] w-[316px] cursor-pointer items-center justify-center rounded-lg bg-primary">
+                            <div
+                                onClick={handleOpenModal}
+                                className="flex h-[48px] w-[316px] cursor-pointer items-center justify-center rounded-lg bg-primary"
+                            >
                                 <p className="text-[20px] font-bold text-white">
                                     Agregar novo cliente
                                 </p>

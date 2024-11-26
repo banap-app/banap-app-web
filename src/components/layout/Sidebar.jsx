@@ -7,7 +7,7 @@ import {
     Wrench,
 } from "lucide-react"
 import { Link } from "react-router-dom"
-import { useModal } from "../context/ModalContext"
+import { useModal } from "../../context/ModalContext"
 
 const Sidebar = () => {
     const { openModal } = useModal()

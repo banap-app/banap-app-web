@@ -1,4 +1,4 @@
-import Analytics from "../components/Analytics"
+import Analytics from "../components/common/Analytics"
 import Activity from "../components/mocks/Activity"
 
 const AnalyticsPage = () => {

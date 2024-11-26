@@ -1,5 +1,5 @@
 import ClientCard from "./ClientCard"
-import { useModal } from "../context/ModalContext"
+import { useModal } from "../../context/ModalContext"
 
 const Clients = ({ addClientButton }) => {
     const { openModal } = useModal()

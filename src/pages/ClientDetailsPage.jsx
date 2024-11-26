@@ -1,14 +1,5 @@
-import {
-    ArrowUpRight,
-    Banana,
-    ChartLine,
-    ChartNoAxesCombined,
-    Skull,
-    Tractor,
-    Wind,
-} from "lucide-react"
-import NPK from "../components/NPK"
-
+import { ChartLine, Tractor } from "lucide-react"
+import NPK from "../components/common/NPK"
 import TotalProductionChart from "../components/charts/TotalProductionChart"
 import MonthlyProductionChart from "../components/charts/MonthlyProductionChart"
 

@@ -1,8 +1,6 @@
 import { UserPlus } from "lucide-react"
-import CancelButton from "./CancelButton"
 import ModalButton from "./ModalButton"
 import ModalInput from "./ModalInput"
-import ModelLayout from "./ModalLayout"
 import ModalText from "./ModalText"
 
 const AggregateModal = () => {

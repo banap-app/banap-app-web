@@ -1,5 +1,5 @@
-import Analytics from "../components/Analytics"
-import Clients from "../components/Clients"
+import Analytics from "../components/common/Analytics"
+import Clients from "../components/common/Clients"
 import Activity from "../components/mocks/Activity"
 import Weather from "../components/mocks/Weather"
 
