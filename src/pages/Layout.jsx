@@ -9,7 +9,6 @@ import AggregateModal from "../components/modals/AggregateModal"
 const Layout = () => {
     return (
         <div className="flex h-screen">
-            <AggregateModal />
             <div className="flex">
                 <Sidebar />
             </div>

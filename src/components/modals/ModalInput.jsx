@@ -5,7 +5,7 @@ const ModalInput = ({ type, name, id, placeholder, ...props }) => {
                 type={type}
                 name={name}
                 id={id}
-                className="h-[69px] w-full rounded-lg border-2 px-[14px] pt-[35px] text-[18px] font-medium placeholder:text-[#8F8F8F] focus:outline-none"
+                className="h-[69px] w-full rounded-lg border-2 px-[14px] pt-[25px] text-[18px] font-medium placeholder:text-[#8F8F8F] focus:outline-none"
                 {...props}
             />
             {placeholder && (

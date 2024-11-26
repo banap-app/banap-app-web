@@ -7,8 +7,15 @@ import {
     Wrench,
 } from "lucide-react"
 import { Link } from "react-router-dom"
+import { useModal } from "../context/ModalContext"
 
 const Sidebar = () => {
+    const { openModal } = useModal()
+
+    const handleOpenModal = () => {
+        openModal("exit")
+    }
+
     return (
         <div className="w-[300px] bg-white shadow-sidebar">
             <div className="flex h-full flex-col justify-between px-[35px] py-[60px]">
@@ -45,7 +52,7 @@ const Sidebar = () => {
                     </nav>
                 </div>
                 <div className="flex flex-col gap-5">
-                    <div className="cursor-pointer">
+                    <div className="cursor-pointer" onClick={handleOpenModal}>
                         <LogOut color="#1EA81E" size={"28px"} />
                     </div>
                     <div className="cursor-pointer">

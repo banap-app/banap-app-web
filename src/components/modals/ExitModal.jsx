@@ -1,12 +1,10 @@
 import { PenLine } from "lucide-react"
-import ModalLayout from "./ModalLayout"
-import CancelButton from "./CancelButton"
 import ModalButton from "./ModalButton"
 import ModalText from "./ModalText"
 
 const ExitModal = () => {
     return (
-        <ModalLayout>
+        <div className="flex flex-col gap-[60px]">
             <div className="flex flex-col">
                 <ModalText
                     title={"Deseja mesmo sair?"}
@@ -16,11 +14,8 @@ const ExitModal = () => {
                     icon={PenLine}
                 />
             </div>
-            <div className="flex flex-col gap-3">
-                <ModalButton value={"Sair"} />
-                <CancelButton />
-            </div>
-        </ModalLayout>
+            <ModalButton value={"Sair"} />
+        </div>
     )
 }
 

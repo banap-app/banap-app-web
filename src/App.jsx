@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { ModalProvider } from "./context/ModalContext"
 import LoginPage from "./pages/LoginPage"
 import RegisterPage from "./pages/RegisterPage"
 import ErrorPage from "./pages/ErrorPage"
@@ -8,6 +9,7 @@ import ClientsPage from "./pages/ClientsPage"
 import AnalyticsPage from "./pages/AnalyticsPage"
 import ClientDetailsPage from "./pages/ClientDetailsPage"
 import ToolsPage from "./pages/ToolsPage"
+import ModalManager from "./components/ModalManager"
 
 const router = createBrowserRouter([
     {
@@ -33,7 +35,12 @@ const router = createBrowserRouter([
 ])
 
 const App = () => {
-    return <RouterProvider router={router} />
+    return (
+        <ModalProvider>
+            <RouterProvider router={router} />
+            <ModalManager />
+        </ModalProvider>
+    )
 }
 
 export default App
