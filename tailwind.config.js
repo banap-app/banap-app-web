@@ -9,6 +9,7 @@ export default {
             },
             boxShadow: {
                 sidebar: "0px 0px 10px rgba(0,0,0,0.25)",
+                modal: "0px 0px 50px rgba(0,0,0,0.10)",
             },
         },
     },
