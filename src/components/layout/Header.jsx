@@ -1,9 +1,19 @@
-import { Bell } from "lucide-react"
+import { Bell, ChevronLeft, ChevronRight } from "lucide-react"
 
-const Header = () => {
+const Header = ({ toggleSidebar, isSidebarVisible }) => {
     return (
-        <div className="mb-auto ml-auto flex flex-col items-center">
-            <div className="mr-[35px] mt-[30px] flex h-auto w-full gap-[10px]">
+        <div className="ml-auto flex w-full items-center justify-between px-[35px] pt-[30px]">
+            <div
+                className="flex h-[36px] w-[36px] items-center justify-center rounded-full bg-primary"
+                onClick={toggleSidebar}
+            >
+                {isSidebarVisible ? (
+                    <ChevronLeft size={"28px"} color="#FFFFFF" />
+                ) : (
+                    <ChevronRight size={"28px"} color="#FFFFFF" />
+                )}
+            </div>
+            <div className="flex h-auto gap-[10px]">
                 <div className="flex h-[36px] w-[159px] cursor-pointer items-center justify-center rounded-full border border-primary bg-white">
                     <p className="text-[12px] font-semibold text-primary">
                         Ver planos Premium
