@@ -3,6 +3,7 @@ import AggregateModal from "./modals/AggregateModal"
 import ExitModal from "./modals/ExitModal"
 import { useModal } from "../context/ModalContext"
 import ModalButton from "./modals/ModalButton"
+import ObservationModal from "./modals/ObservationModal"
 
 const ModalManager = () => {
     const { isOpen, modal, closeModal } = useModal()
@@ -13,6 +14,7 @@ const ModalManager = () => {
         <ModalLayout>
             {modal == "aggregate" && <AggregateModal />}
             {modal == "exit" && <ExitModal />}
+            {modal == "obversvation" && <ObservationModal />}
             <ModalButton
                 onClick={closeModal}
                 value={"Cancelar"}

@@ -10,6 +10,7 @@ import AnalyticsPage from "./pages/AnalyticsPage"
 import ClientDetailsPage from "./pages/ClientDetailsPage"
 import ToolsPage from "./pages/ToolsPage"
 import ModalManager from "./components/ModalManager"
+import FieldDetailsPage from "./pages/FieldDetailsPage"
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
             { path: "/analytics", element: <AnalyticsPage /> },
             { path: "/tools", element: <ToolsPage /> },
             { path: "/clients/details", element: <ClientDetailsPage /> },
+            {
+                path: "/clients/properties/fields/details",
+                element: <FieldDetailsPage />,
+            },
         ],
     },
 ])

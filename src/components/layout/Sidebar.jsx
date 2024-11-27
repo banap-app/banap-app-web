@@ -17,7 +17,7 @@ const Sidebar = () => {
     }
 
     return (
-        <div className="w-[300px] bg-white shadow-sidebar">
+        <div className="h-full w-[300px] bg-white shadow-sidebar">
             <div className="flex h-full flex-col justify-between px-[35px] py-[60px]">
                 <div className="flex flex-col gap-20">
                     <Link to={"/"}>
