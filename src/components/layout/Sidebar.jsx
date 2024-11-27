@@ -6,7 +6,7 @@ import {
     Users,
     Wrench,
 } from "lucide-react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useModal } from "../../context/ModalContext"
 
 const Sidebar = () => {

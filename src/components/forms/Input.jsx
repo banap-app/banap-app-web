@@ -1,4 +1,12 @@
-const Input = ({ type, name, id, placeholder, icon: Icon, ...props }) => {
+const Input = ({
+    type,
+    name,
+    id,
+    placeholder,
+    icon: Icon,
+    onChange,
+    ...props
+}) => {
     return (
         <div className="relative">
             <input
@@ -7,6 +15,7 @@ const Input = ({ type, name, id, placeholder, icon: Icon, ...props }) => {
                 id={id}
                 placeholder={placeholder}
                 className="h-[80px] w-full rounded-lg border-2 px-20 text-[28px] placeholder:text-[#8F8F8F] focus:outline-none"
+                onChange={onChange}
                 {...props}
             />
             {Icon && (
