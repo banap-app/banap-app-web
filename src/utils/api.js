@@ -23,6 +23,10 @@ const customFetch = async (
         }
     }
 
+    if (data) {
+        requestOptions.body = JSON.stringify(data)
+    }
+
     try {
         const response = await fetch(
             `${import.meta.env.APP_API_URL}${resource}`,
