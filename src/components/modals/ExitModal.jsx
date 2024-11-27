@@ -2,12 +2,7 @@ import { PenLine } from "lucide-react"
 import ModalButton from "./ModalButton"
 import ModalText from "./ModalText"
 
-const ExitModal = ({ navigate }) => {
-    const logout = () => {
-        localStorage.removeItem("token")
-        navigate("/login")
-    }
-
+const ExitModal = ({ logout }) => {
     return (
         <div className="flex flex-col gap-[60px]">
             <div className="flex flex-col">

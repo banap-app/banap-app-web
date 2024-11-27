@@ -10,11 +10,13 @@ const ModalManager = () => {
 
     if (!isOpen) return null
 
+    const { name, callback } = modal || {}
+
     return (
         <ModalLayout>
-            {modal == "aggregate" && <AggregateModal />}
-            {modal == "exit" && <ExitModal />}
-            {modal == "obversvation" && <ObservationModal />}
+            {name === "aggregate" && <AggregateModal />}
+            {name === "exit" && <ExitModal logout={callback} />}
+            {name === "obversvation" && <ObservationModal />}
             <ModalButton
                 onClick={closeModal}
                 value={"Cancelar"}

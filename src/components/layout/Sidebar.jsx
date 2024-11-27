@@ -10,10 +10,18 @@ import { Link, useNavigate } from "react-router-dom"
 import { useModal } from "../../context/ModalContext"
 
 const Sidebar = () => {
-    const { openModal } = useModal()
+    const navigate = useNavigate()
+
+    const { openModal, closeModal } = useModal()
+
+    const logout = () => {
+        localStorage.removeItem("token")
+        navigate("/login")
+        closeModal()
+    }
 
     const handleOpenModal = () => {
-        openModal("exit")
+        openModal("exit", logout)
     }
 
     return (

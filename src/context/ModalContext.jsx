@@ -7,8 +7,8 @@ export const ModalProvider = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false)
     const [modal, setModal] = useState(null)
 
-    const openModal = (modal = null) => {
-        setModal(modal)
+    const openModal = (modal = null, callback = null) => {
+        setModal({ name: modal, callback })
         setIsOpen(true)
     }
 
