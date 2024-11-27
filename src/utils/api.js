@@ -25,7 +25,7 @@ const customFetch = async (
 
     try {
         const response = await fetch(
-            `${process.env.APP_API_URL}${resource}`,
+            `${import.meta.env.APP_API_URL}${resource}`,
             requestOptions
         )
 
