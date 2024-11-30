@@ -4,8 +4,15 @@ import {
     TrendingUp,
     Wrench,
 } from "lucide-react"
+import { useModal } from "../context/ModalContext"
 
 const ToolsPage = () => {
+    const { openModal } = useModal()
+
+    const handleOpenSpacingModal = () => {
+        openModal("spacing")
+    }
+
     return (
         <div className="h-full w-full items-center justify-center bg-transparent">
             <div className="flex flex-col gap-[60px]">
@@ -19,7 +26,10 @@ const ToolsPage = () => {
                             </p>
                         </div>
                         <div className="flex gap-5">
-                            <div className="h-[151px] w-[320px] rounded-lg bg-primary/10 p-[25px]">
+                            <div
+                                onClick={handleOpenSpacingModal}
+                                className="h-[151px] w-[320px] cursor-pointer rounded-lg bg-primary/10 p-[25px]"
+                            >
                                 <div className="flex h-full w-full flex-col justify-between">
                                     <div className="flex items-center gap-[10px]">
                                         <Wrench size={"34px"} color="#1EA81E" />

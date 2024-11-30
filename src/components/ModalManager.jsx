@@ -4,6 +4,7 @@ import ExitModal from "./modals/ExitModal"
 import { useModal } from "../context/ModalContext"
 import ModalButton from "./modals/ModalButton"
 import ObservationModal from "./modals/ObservationModal"
+import SpacingModal from "./modals/SpacingModal"
 
 const ModalManager = () => {
     const { isOpen, modal, closeModal } = useModal()
@@ -16,7 +17,8 @@ const ModalManager = () => {
         <ModalLayout>
             {name === "aggregate" && <AggregateModal />}
             {name === "exit" && <ExitModal logout={callback} />}
-            {name === "obversvation" && <ObservationModal />}
+            {name === "observation" && <ObservationModal />}
+            {name === "spacing" && <SpacingModal />}
             <ModalButton
                 onClick={closeModal}
                 value={"Cancelar"}

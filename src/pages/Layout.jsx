@@ -4,7 +4,6 @@ import Header from "../components/layout/Header"
 import Breadcrumbs from "../components/layout/Breadcrumbs"
 import { useState } from "react"
 import ModalLayout from "../components/modals/ModalLayout"
-import ObservationModal from "../components/modals/ObservationModal"
 
 const Layout = () => {
     const [isSidebarVisible, setIsSidebarVisible] = useState(true)
