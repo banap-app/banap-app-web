@@ -5,6 +5,7 @@ import { useModal } from "../context/ModalContext"
 import ModalButton from "./modals/ModalButton"
 import ObservationModal from "./modals/ObservationModal"
 import SpacingModal from "./modals/SpacingModal"
+import MeasurementModal from "./modals/MeasurementModal"
 
 const ModalManager = () => {
     const { isOpen, modal, closeModal } = useModal()
@@ -19,6 +20,7 @@ const ModalManager = () => {
             {name === "exit" && <ExitModal logout={callback} />}
             {name === "observation" && <ObservationModal />}
             {name === "spacing" && <SpacingModal />}
+            {name === "measurement" && <MeasurementModal />}
             <ModalButton
                 onClick={closeModal}
                 value={"Cancelar"}

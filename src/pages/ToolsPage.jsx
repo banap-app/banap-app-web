@@ -9,8 +9,8 @@ import { useModal } from "../context/ModalContext"
 const ToolsPage = () => {
     const { openModal } = useModal()
 
-    const handleOpenSpacingModal = () => {
-        openModal("spacing")
+    const handleOpenModal = (modal) => {
+        openModal(modal)
     }
 
     return (
@@ -27,7 +27,7 @@ const ToolsPage = () => {
                         </div>
                         <div className="flex gap-5">
                             <div
-                                onClick={handleOpenSpacingModal}
+                                onClick={() => handleOpenModal("spacing")}
                                 className="h-[151px] w-[320px] cursor-pointer rounded-lg bg-primary/10 p-[25px]"
                             >
                                 <div className="flex h-full w-full flex-col justify-between">
@@ -48,7 +48,10 @@ const ToolsPage = () => {
                                     />
                                 </div>
                             </div>
-                            <div className="h-[151px] w-[320px] rounded-lg bg-primary/10 p-[25px]">
+                            <div
+                                onClick={() => handleOpenModal("measurement")}
+                                className="h-[151px] w-[320px] rounded-lg bg-primary/10 p-[25px]"
+                            >
                                 <div className="flex h-full w-full flex-col justify-between">
                                     <div className="flex items-center gap-[10px]">
                                         <Wrench size={"34px"} color="#1EA81E" />
