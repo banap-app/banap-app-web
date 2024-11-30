@@ -50,7 +50,7 @@ const ToolsPage = () => {
                             </div>
                             <div
                                 onClick={() => handleOpenModal("measurement")}
-                                className="h-[151px] w-[320px] rounded-lg bg-primary/10 p-[25px]"
+                                className="h-[151px] w-[320px] cursor-pointer rounded-lg bg-primary/10 p-[25px]"
                             >
                                 <div className="flex h-full w-full flex-col justify-between">
                                     <div className="flex items-center gap-[10px]">
