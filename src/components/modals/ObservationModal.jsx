@@ -30,7 +30,7 @@ const ObservationModal = () => {
                     />
                 </div>
                 <div className="mt-[60px]">
-                    <ModalButton value={"Enviar convite"} />
+                    <ModalButton value={"Realizar"} />
                 </div>
             </form>
         </div>
