@@ -29,7 +29,7 @@ const customFetch = async (
 
     try {
         const response = await fetch(
-            `${import.meta.env.APP_API_URL}${resource}`,
+            `${import.meta.env.VITE_APP_API_URL}${resource}`,
             requestOptions
         )
 
