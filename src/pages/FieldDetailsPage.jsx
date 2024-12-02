@@ -1,7 +1,26 @@
+import { useEffect } from "react"
 import NPKChart from "../components/charts/NPKChart"
 import NPK from "../components/common/NPK"
+import customFetch from "../utils/api"
 
 const FieldDetailsPage = () => {
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const data = await customFetch(
+                    "/get_last_data_of_esp",
+                    "GET",
+                    false,
+                    null
+                )
+            } catch (error) {
+                console.error("Error fetching data:", error)
+            }
+        }
+
+        fetchData()
+    }, [])
+
     return (
         <div className="h-full w-full items-center justify-center bg-transparent">
             <div className="flex flex-col gap-[60px]">
