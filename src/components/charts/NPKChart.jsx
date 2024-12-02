@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { Line } from "react-chartjs-2"
 import {
     Chart as ChartJS,
@@ -23,8 +23,49 @@ ChartJS.register(
     Filler
 )
 
-const NPKChart = () => {
+const NPKChart = ({ fieldData }) => {
     const chartRef = useRef(null)
+    const [nitrogen, setNitrogen] = useState([])
+    const [phosphorus, setPhosphorus] = useState([])
+    const [potassium, setPotassium] = useState([])
+    const [chartData, setChartData] = useState({
+        labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+        datasets: [
+            {
+                label: "Nitrogênio",
+                data: [],
+                fill: true,
+                borderColor: "#1a5d1a",
+                borderWidth: 1,
+                pointBackgroundColor: "#1a5d1a",
+                pointBorderColor: "#1a5d1a",
+                pointRadius: 6,
+                tension: 0.4,
+            },
+            {
+                label: "Fósforo",
+                data: [],
+                fill: true,
+                borderColor: "#1ea81e",
+                borderWidth: 1,
+                pointBackgroundColor: "#1ea81e",
+                pointBorderColor: "#1ea81e",
+                pointRadius: 6,
+                tension: 0.4,
+            },
+            {
+                label: "Potássio",
+                data: [],
+                fill: true,
+                borderColor: "#27db27",
+                borderWidth: 1,
+                pointBackgroundColor: "#27db27",
+                pointBorderColor: "#27db27",
+                pointRadius: 6,
+                tension: 0.4,
+            },
+        ],
+    })
 
     const createGradient = (ctx, chartHeight) => {
         const gradientPrimary = ctx.createLinearGradient(0, 0, 0, chartHeight)
@@ -57,57 +98,55 @@ const NPKChart = () => {
         }
     }, [])
 
-    const data = {
-        labels: [
-            "Janeiro",
-            "Fevereiro",
-            "Março",
-            "Abril",
-            "Maio",
-            "Junho",
-            "Julho",
-            "Agosto",
-            "Setembro",
-            "Outubro",
-            "Novembro",
-            "Dezembro",
-        ],
-        datasets: [
-            {
-                label: "Nitrogênio",
-                data: [25, 30, 18, 44, 50, 40, 75, 130, 150, 100, 65, 75],
-                fill: true,
-                borderColor: "#1a5d1a",
-                borderWidth: 1,
-                pointBackgroundColor: "#1a5d1a",
-                pointBorderColor: "#1a5d1a",
-                pointRadius: 6,
-                tension: 0.4,
-            },
-            {
-                label: "Fósforo",
-                data: [35, 65, 30, 75, 140, 120, 180, 240, 230, 150, 100, 130],
-                fill: true,
-                borderColor: "#1ea81e",
-                borderWidth: 1,
-                pointBackgroundColor: "#1ea81e",
-                pointBorderColor: "#1ea81e",
-                pointRadius: 6,
-                tension: 0.4,
-            },
-            {
-                label: "Potássio",
-                data: [8, 10, 6, 18, 25, 23, 30, 35, 30, 28, 20, 23],
-                fill: true,
-                borderColor: "#27db27",
-                borderWidth: 1,
-                pointBackgroundColor: "#27db27",
-                pointBorderColor: "#27db27",
-                pointRadius: 6,
-                tension: 0.4,
-            },
-        ],
-    }
+    useEffect(() => {
+        if (fieldData) {
+            setNitrogen((prev) => {
+                const array = [...prev, fieldData.nitrogen]
+
+                if (array.length > 12) {
+                    array.shift()
+                }
+
+                return array
+            })
+            setPhosphorus((prev) => {
+                const array = [...prev, fieldData.phosphorus]
+
+                if (array.length > 12) {
+                    array.shift()
+                }
+
+                return array
+            })
+            setPotassium((prev) => {
+                const array = [...prev, fieldData.potassium]
+
+                if (array.length > 12) {
+                    array.shift()
+                }
+
+                return array
+            })
+
+            setChartData((prevData) => ({
+                ...prevData,
+                datasets: [
+                    {
+                        ...prevData.datasets[0],
+                        data: nitrogen,
+                    },
+                    {
+                        ...prevData.datasets[1],
+                        data: phosphorus,
+                    },
+                    {
+                        ...prevData.datasets[2],
+                        data: potassium,
+                    },
+                ],
+            }))
+        }
+    }, [fieldData])
 
     const options = {
         responsive: true,
@@ -167,7 +206,7 @@ const NPKChart = () => {
                         size: 12,
                     },
                     callback: function (value, index, labels) {
-                        return data.labels[index].slice(0, 3)
+                        return chartData.labels[index].slice(0, 3)
                     },
                 },
             },
@@ -227,7 +266,7 @@ const NPKChart = () => {
 
     return (
         <div className="h-full w-full">
-            <Line ref={chartRef} data={data} options={options} />
+            <Line ref={chartRef} data={chartData} options={options} />
         </div>
     )
 }
