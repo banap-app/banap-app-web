@@ -8,6 +8,7 @@ import {
 } from "lucide-react"
 import { Link, useNavigate } from "react-router-dom"
 import { useModal } from "../../context/ModalContext"
+import logo from "../../assets/logo.png"
 
 const Sidebar = () => {
     const navigate = useNavigate()
@@ -28,12 +29,19 @@ const Sidebar = () => {
         <div className="h-full w-[300px] bg-white shadow-sidebar">
             <div className="flex h-full flex-col justify-between px-[35px] py-[60px]">
                 <div className="flex flex-col gap-20">
-                    <Link to={"/"}>
-                        <p className="flex cursor-pointer items-center gap-[15px] text-[16px] font-medium text-primary">
-                            <House size={"28px"} />
-                            Início
-                        </p>
-                    </Link>
+                    <div className="flex flex-col gap-[60px]">
+                        <img
+                            src={logo}
+                            alt="logo"
+                            className="h-auto w-[110px]"
+                        />
+                        <Link to={"/"}>
+                            <p className="flex cursor-pointer items-center gap-[15px] text-[16px] font-medium text-primary">
+                                <House size={"28px"} />
+                                Início
+                            </p>
+                        </Link>
+                    </div>
                     <nav className="w-full">
                         <ul className="m-0 list-none gap-[25px] p-0 text-white">
                             <div className="flex flex-col gap-[25px]">

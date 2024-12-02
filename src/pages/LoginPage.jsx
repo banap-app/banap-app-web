@@ -4,6 +4,7 @@ import Button from "../components/forms/Button"
 import { useState } from "react"
 import customFetch from "../utils/api"
 import { Link, useNavigate } from "react-router-dom"
+import logo from "../assets/logo.png"
 
 const LoginPage = () => {
     const navigate = useNavigate()
@@ -28,7 +29,8 @@ const LoginPage = () => {
     }
 
     return (
-        <div className="flex h-screen w-screen flex-col items-center justify-center">
+        <div className="flex h-screen w-screen flex-col items-center justify-center gap-[75px]">
+            <img src={logo} alt="logo" className="h-auto w-[350px]" />
             <div className="flex h-auto w-full flex-col items-center justify-center gap-3">
                 <form
                     className="flex w-full flex-col items-center justify-center sm:w-[458px]"
