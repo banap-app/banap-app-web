@@ -1,4 +1,5 @@
 const customFetch = async (
+    url,
     resource,
     method = "GET",
     needToken = true,
@@ -28,10 +29,7 @@ const customFetch = async (
     }
 
     try {
-        const response = await fetch(
-            `${import.meta.env.VITE_APP_API_URL}${resource}`,
-            requestOptions
-        )
+        const response = await fetch(`${url}${resource}`, requestOptions)
 
         if (!response.ok) {
             return await response.json()

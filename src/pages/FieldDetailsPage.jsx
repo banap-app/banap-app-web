@@ -15,25 +15,15 @@ import { useModal } from "../context/ModalContext"
 const FieldDetailsPage = () => {
     const [fieldData, setFieldData] = useState(null)
 
-    const payload = {
-        httpMethod: "GET",
-        path: "/get_last_data_of_esp",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        queryStringParameters: null,
-        body: "{}",
-        isBase64Encoded: false,
-    }
-
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const data = await customFetch(
+                    import.meta.env.VITE_APP_API_URL,
                     "/get_last_data_of_esp",
-                    "POST",
+                    "GET",
                     false,
-                    payload
+                    null
                 )
 
                 const parsedData = JSON.parse(data.body)

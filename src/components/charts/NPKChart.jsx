@@ -240,7 +240,7 @@ const NPKChart = ({ fieldData }) => {
                     },
                 },
                 min: 0,
-                max: 250,
+                // max: 250,
             },
         },
         layout: {
