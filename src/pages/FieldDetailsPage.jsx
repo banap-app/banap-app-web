@@ -11,6 +11,13 @@ import {
     TrendingUp,
 } from "lucide-react"
 import { useModal } from "../context/ModalContext"
+import {
+    CultivationVector,
+    DescriptionVector,
+    ObservationVector,
+    QuantityVector,
+} from "../assets/CardVectors"
+import Analytics from "../components/common/Analytics"
 
 const FieldDetailsPage = () => {
     const [fieldData, setFieldData] = useState(null)
@@ -85,7 +92,10 @@ const FieldDetailsPage = () => {
                             <div className="flex h-[255px] w-full gap-5">
                                 <div className="h-full w-4/5 rounded-lg bg-primary/10"></div>
                                 <div className="flex w-1/5 flex-col gap-5">
-                                    <div className="h-1/2 w-full rounded-lg bg-primary/10 p-5">
+                                    <div className="relative h-1/2 w-full rounded-lg bg-primary/10 p-5">
+                                        <div className="absolute right-0 top-0">
+                                            <CultivationVector />
+                                        </div>
                                         <div className="flex h-full flex-col justify-between">
                                             <div className="flex items-center gap-[5px]">
                                                 <Sprout
@@ -103,7 +113,10 @@ const FieldDetailsPage = () => {
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="h-1/2 w-full rounded-lg bg-primary/10 p-5">
+                                    <div className="relative h-1/2 w-full rounded-lg bg-primary/10 p-5">
+                                        <div className="absolute right-0 top-0">
+                                            <QuantityVector />
+                                        </div>
                                         <div className="flex h-full flex-col justify-between">
                                             <div className="flex items-center gap-[5px]">
                                                 <Layers3
@@ -123,7 +136,10 @@ const FieldDetailsPage = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="h-[95px] w-full rounded-l-xl bg-primary/10 p-5">
+                            <div className="relative h-[95px] w-full rounded-l-xl bg-primary/10 p-5">
+                                <div className="absolute right-0 top-0">
+                                    <DescriptionVector />
+                                </div>
                                 <div className="flex h-full flex-col justify-between">
                                     <div className="flex items-center gap-[5px]">
                                         <FileText
@@ -168,7 +184,10 @@ const FieldDetailsPage = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="h-[145px] w-[385px] rounded-lg bg-primary/10 p-5">
+                        <div className="relative h-[145px] w-[385px] rounded-lg bg-primary/10 p-5">
+                            <div className="absolute right-0 top-0">
+                                <ObservationVector />
+                            </div>
                             <div className="flex h-full flex-col justify-between">
                                 <div className="flex items-center gap-[5px]">
                                     <PenLine size={"20px"} color="#1EA81E" />
@@ -209,21 +228,7 @@ const FieldDetailsPage = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="h-[145px] w-[385px] rounded-lg bg-primary/10 p-5">
-                            <div className="flex h-full flex-col justify-between">
-                                <div className="flex items-center gap-[10px]">
-                                    <TrendingUp size={"34px"} color="#1EA81E" />
-                                    <div className="flex flex-col">
-                                        <p className="text-[16px] font-semibold text-primary">
-                                            Análise 01
-                                        </p>
-                                        <p className="text-[12px] font-medium text-primary">
-                                            Calcúlo de Calagem
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <Analytics />
                     </div>
                 </section>
             </div>

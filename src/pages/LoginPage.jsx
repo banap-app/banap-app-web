@@ -5,6 +5,7 @@ import { useState } from "react"
 import customFetch from "../utils/api"
 import { Link, useNavigate } from "react-router-dom"
 import logo from "../assets/logo.png"
+import { LowerLines, UpperLines } from "../assets/DecorativeLines"
 
 const LoginPage = () => {
     const navigate = useNavigate()
@@ -30,6 +31,12 @@ const LoginPage = () => {
 
     return (
         <div className="flex h-screen w-screen flex-col items-center justify-center gap-[75px]">
+            <div className="absolute right-0 top-0">
+                <UpperLines />
+            </div>
+            <div className="absolute bottom-0 left-0">
+                <LowerLines />
+            </div>
             <img src={logo} alt="logo" className="h-auto w-[350px]" />
             <div className="flex h-auto w-full flex-col items-center justify-center gap-3">
                 <form

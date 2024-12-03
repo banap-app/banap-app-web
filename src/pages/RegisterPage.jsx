@@ -4,6 +4,7 @@ import Button from "../components/forms/Button"
 import { useState } from "react"
 import customFetch from "../utils/api"
 import { Link, useNavigate } from "react-router-dom"
+import { LowerLines, UpperLines } from "../assets/DecorativeLines"
 
 const RegisterPage = () => {
     const navigate = useNavigate()
@@ -32,6 +33,12 @@ const RegisterPage = () => {
 
     return (
         <div className="flex h-screen w-screen flex-col items-center justify-center">
+            <div className="absolute right-0 top-0">
+                <UpperLines />
+            </div>
+            <div className="absolute bottom-0 left-0">
+                <LowerLines />
+            </div>
             <div className="flex h-auto w-full items-center justify-center">
                 <div className="flex w-full flex-col items-center justify-center gap-20">
                     <div className="w-full text-center">

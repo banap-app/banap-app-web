@@ -5,6 +5,7 @@ import {
     Wrench,
 } from "lucide-react"
 import { useModal } from "../context/ModalContext"
+import { ToolsVector } from "../assets/CardVectors"
 
 const ToolsPage = () => {
     const { openModal } = useModal()
@@ -28,8 +29,11 @@ const ToolsPage = () => {
                         <div className="flex gap-5">
                             <div
                                 onClick={() => handleOpenModal("spacing")}
-                                className="h-[151px] w-[320px] cursor-pointer rounded-lg bg-primary/10 p-[25px]"
+                                className="relative h-[151px] w-[320px] cursor-pointer rounded-lg bg-primary/10 p-[25px]"
                             >
+                                <div className="absolute bottom-0 right-0">
+                                    <ToolsVector />
+                                </div>
                                 <div className="flex h-full w-full flex-col justify-between">
                                     <div className="flex items-center gap-[10px]">
                                         <Wrench size={"34px"} color="#1EA81E" />
@@ -50,8 +54,11 @@ const ToolsPage = () => {
                             </div>
                             <div
                                 onClick={() => handleOpenModal("measurement")}
-                                className="h-[151px] w-[320px] cursor-pointer rounded-lg bg-primary/10 p-[25px]"
+                                className="relative h-[151px] w-[320px] cursor-pointer rounded-lg bg-primary/10 p-[25px]"
                             >
+                                <div className="absolute bottom-0 right-0">
+                                    <ToolsVector />
+                                </div>
                                 <div className="flex h-full w-full flex-col justify-between">
                                     <div className="flex items-center gap-[10px]">
                                         <Wrench size={"34px"} color="#1EA81E" />
@@ -70,7 +77,10 @@ const ToolsPage = () => {
                                     />
                                 </div>
                             </div>
-                            <div className="h-[151px] w-[320px] rounded-lg bg-primary/10 p-[25px]">
+                            <div className="relative h-[151px] w-[320px] rounded-lg bg-primary/10 p-[25px]">
+                                <div className="absolute bottom-0 right-0">
+                                    <ToolsVector />
+                                </div>
                                 <div className="flex h-full w-full flex-col justify-between">
                                     <div className="flex items-center gap-[10px]">
                                         <Wrench size={"34px"} color="#1EA81E" />

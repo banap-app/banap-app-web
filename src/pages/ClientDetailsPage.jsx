@@ -2,6 +2,7 @@ import { ChartLine, Tractor } from "lucide-react"
 import NPK from "../components/common/NPK"
 import TotalProductionChart from "../components/charts/TotalProductionChart"
 import MonthlyProductionChart from "../components/charts/MonthlyProductionChart"
+import { PropertyVector } from "../assets/CardVectors"
 
 const ClientDetailsPage = () => {
     return (
@@ -72,7 +73,10 @@ const ClientDetailsPage = () => {
                         </div>
                         <div className="flex flex-row gap-5">
                             <div className="flex-shrink-0">
-                                <div className="h-[170px] w-[320px] rounded-lg bg-primary/10 p-[25px]">
+                                <div className="relative h-[170px] w-[320px] rounded-lg bg-primary/10 p-[25px]">
+                                    <div className="absolute right-0 top-0">
+                                        <PropertyVector />
+                                    </div>
                                     <div className="flex items-center gap-[10px]">
                                         <Tractor
                                             size={"34px"}

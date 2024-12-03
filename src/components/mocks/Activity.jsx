@@ -1,11 +1,15 @@
 import { Clock } from "lucide-react"
+import { ActivityVector } from "../../assets/CardVectors"
 
 const Activity = () => {
     return (
         <div className="flex flex-col gap-5">
             <div className="flex gap-5">
                 <div className="w-2/3">
-                    <div className="h-[207px] w-full rounded-lg bg-primary/10 px-[25px] py-5">
+                    <div className="relative h-[207px] w-full rounded-lg bg-primary/10 px-[25px] py-5">
+                        <div className="absolute bottom-0 right-0">
+                            <ActivityVector />
+                        </div>
                         <div className="flex h-full flex-col justify-between">
                             <div className="flex flex-col">
                                 <p className="text-[24px] font-semibold text-primary">
@@ -42,7 +46,10 @@ const Activity = () => {
                     </div>
                 </div>
                 <div className="w-1/3">
-                    <div className="h-[207px] w-full rounded-lg bg-primary/10 px-[25px] py-5">
+                    <div className="relative h-[207px] w-full rounded-lg bg-primary/10 px-[25px] py-5">
+                        <div className="absolute bottom-0 right-0">
+                            <ActivityVector />
+                        </div>
                         <div className="flex h-full flex-col justify-between">
                             <div className="flex flex-col">
                                 <p className="text-[24px] font-semibold text-primary">
@@ -72,7 +79,10 @@ const Activity = () => {
                 </div>
             </div>
             <div className="w-full">
-                <div className="h-[207px] w-full rounded-lg bg-primary/10 px-[25px] py-5">
+                <div className="relative h-[207px] w-full rounded-lg bg-primary/10 px-[25px] py-5">
+                    <div className="absolute bottom-0 right-0">
+                        <ActivityVector />
+                    </div>
                     <div className="flex h-full flex-col justify-between">
                         <div className="flex flex-col">
                             <p className="text-[24px] font-semibold text-primary">
