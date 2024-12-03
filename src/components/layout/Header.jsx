@@ -1,4 +1,4 @@
-import { Bell, ChevronLeft, ChevronRight } from "lucide-react"
+import { Bell, ChevronLeft, ChevronRight, Download } from "lucide-react"
 
 const Header = ({ toggleSidebar, isSidebarVisible }) => {
     return (
@@ -19,7 +19,8 @@ const Header = ({ toggleSidebar, isSidebarVisible }) => {
                         Ver planos Premium
                     </p>
                 </div>
-                <div className="flex h-[36px] w-[159px] cursor-pointer items-center justify-center rounded-full bg-primary">
+                <div className="flex h-[36px] w-[159px] cursor-pointer items-center justify-center gap-[10px] rounded-full bg-primary">
+                    <Download size={"16px"} color="#FFFFFF" />
                     <p className="text-[12px] font-semibold text-white">
                         Instalar aplicativo
                     </p>

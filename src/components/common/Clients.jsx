@@ -1,5 +1,6 @@
 import ClientCard from "./ClientCard"
 import { useModal } from "../../context/ModalContext"
+import { AggregateClientIcon } from "../../assets/CustomIcons"
 
 const Clients = ({ addClientButton }) => {
     const { openModal } = useModal()
@@ -16,9 +17,11 @@ const Clients = ({ addClientButton }) => {
             {addClientButton && (
                 <div className="flex-shrink-0">
                     <div
-                        className="h-[170px] w-[220px] rounded-lg bg-primary/10"
+                        className="flex h-[170px] w-[220px] cursor-pointer items-center justify-center rounded-lg bg-primary/10"
                         onClick={handleOpenModal}
-                    ></div>
+                    >
+                        <AggregateClientIcon />
+                    </div>
                 </div>
             )}
         </div>

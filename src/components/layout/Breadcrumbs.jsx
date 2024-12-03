@@ -1,4 +1,12 @@
-import { ChevronRight, House, TrendingUp, Users, Wrench } from "lucide-react"
+import {
+    ChevronRight,
+    House,
+    LayoutDashboard,
+    Tractor,
+    TrendingUp,
+    Users,
+    Wrench,
+} from "lucide-react"
 import { Link, useLocation } from "react-router-dom"
 
 const Breadcrumbs = () => {
@@ -22,6 +30,17 @@ const Breadcrumbs = () => {
         tools: {
             label: "Ferramentas",
             icon: <Wrench size={"28px"} color="#1EA81E" />,
+        },
+        details: {
+            label: "Detalhes",
+        },
+        properties: {
+            label: "Propriedades",
+            icon: <Tractor size={"28px"} color="#1EA81E" />,
+        },
+        fields: {
+            label: "Talhões",
+            icon: <LayoutDashboard size={"28px"} color="#1EA81E" />,
         },
     }
 

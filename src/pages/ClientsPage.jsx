@@ -1,3 +1,4 @@
+import { AggregateClientSmallIcon } from "../assets/CustomIcons"
 import Clients from "../components/common/Clients"
 import Activity from "../components/mocks/Activity"
 import { useModal } from "../context/ModalContext"
@@ -25,8 +26,9 @@ const ClientsPage = () => {
                             </div>
                             <div
                                 onClick={handleOpenModal}
-                                className="flex h-[48px] w-[316px] cursor-pointer items-center justify-center rounded-lg bg-primary"
+                                className="flex h-[48px] w-[316px] cursor-pointer items-center justify-center gap-[10px] rounded-lg bg-primary"
                             >
+                                <AggregateClientSmallIcon />
                                 <p className="text-[20px] font-bold text-white">
                                     Agregar novo cliente
                                 </p>

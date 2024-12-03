@@ -1,3 +1,4 @@
+import { LayoutDashboard } from "lucide-react"
 import { FieldVector } from "../assets/CardVectors"
 
 const PropertyDetailsPage = () => {
@@ -19,13 +20,19 @@ const PropertyDetailsPage = () => {
                                 <div className="absolute right-0 top-0">
                                     <FieldVector />
                                 </div>
-                                <div>
-                                    <p className="text-[16px] font-semibold text-primary">
-                                        Talhão 01
-                                    </p>
-                                    <p className="text-[12px] text-primary">
-                                        Propriedade 01
-                                    </p>
+                                <div className="flex items-center gap-[10px]">
+                                    <LayoutDashboard
+                                        size={"34px"}
+                                        color="#1EA81E"
+                                    />
+                                    <div>
+                                        <p className="text-[16px] font-semibold text-primary">
+                                            Talhão 01
+                                        </p>
+                                        <p className="text-[12px] text-primary">
+                                            Propriedade 01
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

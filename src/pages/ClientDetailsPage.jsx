@@ -20,7 +20,7 @@ const ClientDetailsPage = () => {
                                     Propriedades...
                                 </p>
                             </div>
-                            <div className="flex h-[48px] w-[316px] cursor-pointer items-center justify-center rounded-lg bg-primary">
+                            <div className="flex h-[48px] w-[316px] cursor-pointer items-center justify-center gap-[10px] rounded-lg bg-primary">
                                 <p className="text-[20px] font-bold text-white">
                                     Entrar em contato
                                 </p>
