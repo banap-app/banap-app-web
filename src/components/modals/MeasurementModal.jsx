@@ -4,6 +4,7 @@ import { useState } from "react"
 import ModalInput from "./ModalInput"
 import ModalResult from "./ModalResult"
 import ModalButton from "./ModalButton"
+import ModalSelect from "./ModalSelect"
 
 const MeasurementModal = () => {
     const [view, setView] = useState(0)
@@ -20,13 +21,7 @@ const MeasurementModal = () => {
             {view === 0 ? (
                 <form>
                     <div className="flex flex-col gap-[20px]">
-                        <ModalInput
-                            type={"text"}
-                            name={""}
-                            id={""}
-                            placeholder={"Medidas"}
-                            required
-                        />
+                        <ModalSelect />
                         <ModalInput
                             type={"text"}
                             name={""}
