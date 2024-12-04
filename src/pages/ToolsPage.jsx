@@ -29,7 +29,7 @@ const ToolsPage = () => {
                         <div className="flex gap-5">
                             <div
                                 onClick={() => handleOpenModal("spacing")}
-                                className="relative h-[151px] w-[320px] cursor-pointer rounded-lg bg-primary/10 p-[25px]"
+                                className="relative h-[151px] w-[320px] cursor-pointer overflow-hidden rounded-lg bg-primary/10 p-[25px]"
                             >
                                 <div className="absolute bottom-0 right-0">
                                     <ToolsVector />
@@ -54,7 +54,7 @@ const ToolsPage = () => {
                             </div>
                             <div
                                 onClick={() => handleOpenModal("measurement")}
-                                className="relative h-[151px] w-[320px] cursor-pointer rounded-lg bg-primary/10 p-[25px]"
+                                className="relative h-[151px] w-[320px] cursor-pointer overflow-hidden rounded-lg bg-primary/10 p-[25px]"
                             >
                                 <div className="absolute bottom-0 right-0">
                                     <ToolsVector />
@@ -77,7 +77,7 @@ const ToolsPage = () => {
                                     />
                                 </div>
                             </div>
-                            <div className="relative h-[151px] w-[320px] rounded-lg bg-primary/10 p-[25px]">
+                            <div className="relative h-[151px] w-[320px] overflow-hidden rounded-lg bg-primary/10 p-[25px]">
                                 <div className="absolute bottom-0 right-0">
                                     <ToolsVector />
                                 </div>

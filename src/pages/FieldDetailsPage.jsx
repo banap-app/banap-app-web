@@ -26,7 +26,7 @@ const FieldDetailsPage = () => {
         const fetchData = async () => {
             try {
                 const data = await customFetch(
-                    import.meta.env.VITE_APP_API_URL,
+                    import.meta.env.VITE_APP_SENSOR_URL,
                     "/get_last_data_of_esp",
                     "GET",
                     false,

@@ -16,7 +16,7 @@ const PropertyDetailsPage = () => {
                             </p>
                         </div>
                         <div className="flex gap-5">
-                            <div className="relative h-[170px] w-[320px] rounded-lg bg-primary/10 p-[27px]">
+                            <div className="relative h-[170px] w-[320px] overflow-hidden rounded-lg bg-primary/10 p-[27px]">
                                 <div className="absolute right-0 top-0">
                                     <FieldVector />
                                 </div>

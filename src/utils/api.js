@@ -32,6 +32,7 @@ const customFetch = async (
         const response = await fetch(`${url}${resource}`, requestOptions)
 
         if (!response.ok) {
+            console.log(response)
             return await response.json()
         } else {
             const responseData = await response.json()

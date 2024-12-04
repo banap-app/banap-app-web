@@ -2,7 +2,7 @@ import { ClientVector } from "../../assets/CardVectors"
 
 const ClientCard = () => {
     return (
-        <div className="relative h-[170px] w-[220px] rounded-lg bg-primary/10">
+        <div className="relative h-[170px] w-[220px] overflow-hidden rounded-lg bg-primary/10">
             <div className="absolute bottom-0 right-0">
                 <ClientVector />
             </div>

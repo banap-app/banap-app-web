@@ -17,7 +17,7 @@ const Clients = ({ addClientButton }) => {
             {addClientButton && (
                 <div className="flex-shrink-0">
                     <div
-                        className="flex h-[170px] w-[220px] cursor-pointer items-center justify-center rounded-lg bg-primary/10"
+                        className="flex h-[170px] w-[220px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary/10"
                         onClick={handleOpenModal}
                     >
                         <AggregateClientIcon />

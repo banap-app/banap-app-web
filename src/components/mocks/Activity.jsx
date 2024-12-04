@@ -6,7 +6,7 @@ const Activity = () => {
         <div className="flex flex-col gap-5">
             <div className="flex gap-5">
                 <div className="w-2/3">
-                    <div className="relative h-[207px] w-full rounded-lg bg-primary/10 px-[25px] py-5">
+                    <div className="relative h-[207px] w-full overflow-hidden rounded-lg bg-primary/10 px-[25px] py-5">
                         <div className="absolute bottom-0 right-0">
                             <ActivityVector />
                         </div>
@@ -46,7 +46,7 @@ const Activity = () => {
                     </div>
                 </div>
                 <div className="w-1/3">
-                    <div className="relative h-[207px] w-full rounded-lg bg-primary/10 px-[25px] py-5">
+                    <div className="relative h-[207px] w-full overflow-hidden rounded-lg bg-primary/10 px-[25px] py-5">
                         <div className="absolute bottom-0 right-0">
                             <ActivityVector />
                         </div>
@@ -79,7 +79,7 @@ const Activity = () => {
                 </div>
             </div>
             <div className="w-full">
-                <div className="relative h-[207px] w-full rounded-lg bg-primary/10 px-[25px] py-5">
+                <div className="relative h-[207px] w-full overflow-hidden rounded-lg bg-primary/10 px-[25px] py-5">
                     <div className="absolute bottom-0 right-0">
                         <ActivityVector />
                     </div>

@@ -17,7 +17,7 @@ const RegisterPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const response = await customFetch("", "POST", false, {
+            const response = await customFetch("/auth", "POST", false, {
                 name,
                 email,
                 password,

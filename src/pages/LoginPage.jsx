@@ -16,10 +16,17 @@ const LoginPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const response = await customFetch("", "POST", false, {
-                email,
-                password,
-            })
+            console.log(email, password)
+            const response = await customFetch(
+                import.meta.env.VITE_APP_AUTH_SERVICE,
+                "/auth",
+                "POST",
+                false,
+                {
+                    email,
+                    password,
+                }
+            )
             if (response.token) {
                 localStorage.setItem("token", response.token)
                 navigate("/")
